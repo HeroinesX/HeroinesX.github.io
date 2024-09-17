@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="75" height="21" role="img" aria-label="正在运行😊">
+    <title>正在运行😊</title>
+    <g stroke="#d5d5d5">
+        <rect x="0.5" y="0.5" width="73" height="19" rx="2" fill="#fafafa" />
+    </g>
+    <g aria-hidden="true" fill="#333" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" text-rendering="geometricPrecision" font-weight="700" font-size="110px" line-height="14px">
+        <text id="rlink" x="380" y="140" transform="scale(.1)" textLength="650">正在运行😊</text>
+    </g>
+</svg>
