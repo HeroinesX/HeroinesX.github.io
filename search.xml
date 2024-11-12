@@ -4,9 +4,22 @@
   
     
     <entry>
+      <title>LLM本地部署经验-1</title>
+      <link href="/2024/11/12/5/"/>
+      <url>/2024/11/12/5/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Ollama的介绍"><a href="#Ollama的介绍" class="headerlink" title="Ollama的介绍"></a>Ollama的介绍</h2><p>Ollama是一个大型语音模型平台，使用上跟ChatGPT非常的类似。<br>首先它是开源免费的，这对于预算有限的个人或者小型组织来说是个值得考虑的选择。<br>其次它可以完全离线运作，即使在没有网络的环境也能确保工作不受到中断。<br>最后Ollama完全是在自己的电脑中运行的，因此我们的重要数据不会被上传到云端，也不用担心会发生隐私泄露的风险。</p><h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>进入<a href="https://ollama.com/">https://ollama.com</a><br>在官网选择合适的系统，点击Download下载安装包。</p><h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p>下载完成后打开安装包，点击Install进行安装。</p><p>至此Ollama安装完毕，但要跟Ollama进行互动，事实上还需要一个操作界面“Open WebUI”<br>而Open WebUI必须要在Docker的环境中才能运行，Docker的安装<a href="/2024/11/11/4/">Docker安装</a></p><h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>确保拥有Docker容器并处在运行的状态后就可以进行Open WebUI的部署。<br>首先进入Open WebUI的官网<a href="https://docs.openwebui.com/">https://docs.openwebui.com</a><br>根据官方文档描述来进行对应的安装。<br>等待安装完成后在Docker中会多出一个Open WebUI的项目。</p><h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p>点击项目的本地地址，进入注册一个账户（第一个账户为管理员）<br>接下来就会来到一个跟ChatGPT非常类似的界面，这里可以点击左下角将语音改成中文。<br>还有一些参数可以自行调整</p><h1 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h1><p>接下来就是模型的选择<br>Ollama有整理出当前最受欢迎的开源语言模型，这里我们选择qwen2.5（通义千问）。<br>根据本地物理设备的能力选择合适的训练数据集模型。<br>8g显存可以使用7B的训练量。<br>在cmd命令行中输入：<br>ollama run qwen-2.5-7B<br>即可下载模型。</p><h1 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h1><p>下载完成后可返回docker容器中的Open WebUI项目，即可在Web界面中选择Qwen2.5进行本地使用。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>经验</title>
-      <link href="/2024/11/12/4/"/>
-      <url>/2024/11/12/4/</url>
+      <link href="/2024/11/11/4/"/>
+      <url>/2024/11/11/4/</url>
       
         <content type="html"><![CDATA[<h2 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h2><p>Docker 是一个流行的容器化平台,可以帮助您打包和部署应用程序。以下是在不同操作系统上安装 Docker 的步骤:</p><p>Windows:</p><p>访问 Docker 官网 (<a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a>)<br>下载适用于 Windows 的 Docker Desktop 安装程序<br>运行安装程序并按照屏幕上的提示完成安装</p><p>macOS:</p><p>访问 Docker 官网 (<a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a>)<br>下载适用于 Mac 的 Docker Desktop 安装程序<br>运行安装程序并按照屏幕上的提示完成安装</p><p>Linux:</p><p>打开终端<br>根据您使用的 Linux 发行版,运行以下命令之一:</p><p>Ubuntu&#x2F;Debian: sudo apt-get update &amp;&amp; sudo apt-get install docker.io<br>CentOS&#x2F;RHEL: sudo yum install docker-ce docker-ce-cli containerd.io<br>Fedora: sudo dnf install docker-ce docker-ce-cli containerd.io</p><p>安装验证:</p><p>安装完成后,运行以下命令检查 Docker 是否已正确安装:</p><p>docker version</p><p>如果命令输出了 Docker 的版本信息,说明安装成功。</p><p>安装完成后,您可以开始使用 Docker 来构建、运行和管理容器化的应用程序了。</p>]]></content>
       
