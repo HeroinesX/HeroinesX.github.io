@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>经验</title>
+      <link href="/2024/11/12/4/"/>
+      <url>/2024/11/12/4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h2><p>Docker 是一个流行的容器化平台,可以帮助您打包和部署应用程序。以下是在不同操作系统上安装 Docker 的步骤:</p><p>Windows:</p><p>访问 Docker 官网 (<a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a>)<br>下载适用于 Windows 的 Docker Desktop 安装程序<br>运行安装程序并按照屏幕上的提示完成安装</p><p>macOS:</p><p>访问 Docker 官网 (<a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a>)<br>下载适用于 Mac 的 Docker Desktop 安装程序<br>运行安装程序并按照屏幕上的提示完成安装</p><p>Linux:</p><p>打开终端<br>根据您使用的 Linux 发行版,运行以下命令之一:</p><p>Ubuntu&#x2F;Debian: sudo apt-get update &amp;&amp; sudo apt-get install docker.io<br>CentOS&#x2F;RHEL: sudo yum install docker-ce docker-ce-cli containerd.io<br>Fedora: sudo dnf install docker-ce docker-ce-cli containerd.io</p><p>安装验证:</p><p>安装完成后,运行以下命令检查 Docker 是否已正确安装:</p><p>docker version</p><p>如果命令输出了 Docker 的版本信息,说明安装成功。</p><p>安装完成后,您可以开始使用 Docker 来构建、运行和管理容器化的应用程序了。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>短文</title>
       <link href="/2024/09/18/3/"/>
       <url>/2024/09/18/3/</url>
